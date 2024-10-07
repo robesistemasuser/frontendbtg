@@ -1,0 +1,112 @@
+/* Contenedor principal del formulario */
+.fund-subscription-form {
+  background-color: #f8f9fa; /* Color de fondo claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaciado interno */
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 40px auto; /* Centrar el formulario */
+}
+
+/* Estilo del encabezado */
+.fund-subscription-form h2 {
+  text-align: center; /* Centrar el texto */
+  color: #343a40; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  font-size: 24px; /* Tamaño de fuente */
+}
+
+/* Estilo de los selects y inputs */
+.fund-subscription-form select,
+.fund-subscription-form input[type="number"] {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado inferior */
+  border: 1px solid #ced4da; /* Borde sutil */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  transition: border-color 0.3s; /* Transición suave */
+}
+
+/* Cambiar color de borde al enfocarse */
+.fund-subscription-form select:focus,
+.fund-subscription-form input[type="number"]:focus {
+  border-color: #007bff; /* Color azul al enfocar */
+  outline: none; /* Sin contorno */
+}
+
+/* Estilo de las opciones del select */
+.fund-subscription-form option {
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo del botón de suscripción */
+.subscribe-button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor a puntero */
+  font-size: 16px; /* Tamaño de fuente */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Cambiar color de fondo y añadir efecto al pasar el mouse */
+.subscribe-button:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Deshabilitar el botón */
+.subscribe-button.inactive {
+  background-color: #6c757d; /* Color gris */
+  cursor: not-allowed; /* Cambiar cursor */
+}
+
+/* Notificaciones */
+.Toaster {
+  z-index: 9999; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Mejoras visuales en los mensajes de error */
+.toast.error {
+  background-color: #dc3545; /* Color de fondo rojo */
+  color: white; /* Color de texto blanco */
+}
+
+/* Mejoras visuales en los mensajes de éxito */
+.toast.success {
+  background-color: #28a745; /* Color de fondo verde */
+  color: white; /* Color de texto blanco */
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (min-width: 480px) and (max-width: 760px){
+  /* Ajustes en el contenedor principal */
+  .fund-subscription-form {
+    padding: 15px; /* Menos espaciado interno */
+    margin: 20px; /* Menos margen */
+  }
+
+  /* Ajustes en el tamaño de la fuente del encabezado */
+  .fund-subscription-form h2 {
+    font-size: 20px; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Ajustes en selects e inputs */
+  .fund-subscription-form select,
+  .fund-subscription-form input[type="number"],
+  .subscribe-button {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding: 8px; /* Menos espaciado interno */
+  }
+
+  /* Ajustes en el botón de suscripción */
+  .subscribe-button {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+  }
+}

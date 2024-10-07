@@ -1,0 +1,46 @@
+/* Estilos para el encabezado */
+.header {
+  background-color: #34495e; /* Fondo oscuro */
+  padding: 20px 0; /* Espaciado superior e inferior */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  text-align: center;
+  width: 100%; /* Abarca el ancho completo de la pantalla */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+/* Estilos del texto del encabezado */
+.header h1 {
+  color: white; /* Color del texto blanco */
+  font-size: 2.5rem; /* Tamaño de la fuente por defecto para pantallas grandes */
+  font-weight: 600; /* Negrita */
+  margin: 0; /* Elimina el margen */
+  line-height: 1.2; /* Espaciado de línea */
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Media queries para mejorar la responsividad */
+@media (max-width: 760px) {
+  .header h1 {
+      font-size: 2rem; /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 1.5rem; /* Tamaño de fuente para pantallas pequeñas */
+      padding: 0 10px; /* Añade espaciado lateral en pantallas pequeñas */
+  }
+}
+
+/* Estilos adicionales para mejorar la experiencia en pantallas muy grandes */
+@media (min-width: 1200px) {
+  .header {
+      padding: 30px 0; /* Más espaciado en pantallas grandes */
+  }
+
+  .header h1 {
+      font-size: 3rem; /* Tamaño de fuente más grande para pantallas muy grandes */
+  }
+}
